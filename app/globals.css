@@ -8,26 +8,37 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+body,
+html {
+  overflow-x: hidden;
+  font-family: var(--font-base) !important;
+}
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* Change the width of the vertical scrollbar */
+  height: 5px; /* Change the height of the horizontal scrollbar */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* You can set any background color you want */
 }
 
-@layer utilities {
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #888; /* You can set any color for the scrollbar thumb */
+  border-radius: 4px;
+}
+
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
-  }
-}
+  } */
