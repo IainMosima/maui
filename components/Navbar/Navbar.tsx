@@ -6,8 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
-
-const DesktopNavbar = () => {
+const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false);
     return (
         <div className='sm:pr-[4rem] sm:pt-[4rem] h-full'>
@@ -16,7 +15,7 @@ const DesktopNavbar = () => {
 
                 <div className='flex flex-col justify-end pr-5'>
                     {/* harmbuger menu */}
-                    <div className={`flex flex-col gap-[0.4rem] cursor-pointer fixed ${menuToggle ? 'top-[15%] left-[94%]' : ''}`} onClick={() => setMenuToggle(prev => !prev)}>
+                    <div className={`flex flex-col gap-[0.4rem] cursor-pointer ${menuToggle ? 'fixed top-[13%] left-[92%]' : ''}`} onClick={() => setMenuToggle(prev => !prev)}>
                         <div className={`w-[2.2rem] h-1 bg-white rounded-full ${menuToggle ? 'rotate-45 origin-left' : ''} ease-out duration-150`}></div>
                         <div className={`w-[2.2rem] h-1 bg-white rounded-full ${menuToggle ? 'opacity-0' : ''} ease-out duration-150`}></div>
                         <div className={`w-[2.2rem] h-1 bg-white rounded-full -rotate ${menuToggle ? '-rotate-45 origin-left' : ''} ease-out duration-150`} ></div>
@@ -45,15 +44,15 @@ const DesktopNavbar = () => {
 
             </div>
 
-
+            {/* mobile */}
             <div className='h-full flex place-items-end'>
-                <div className={`bg-background flex px-[2rem] py-[1rem] gap-3 h-[16rem] z-10 sm:hidden ${menuToggle ? 'expanded h-[100%] w-full' : ''}`}>
+                <div className={`bg-background flex px-3 py-[1rem] gap-3 h-[16rem] z-10 sm:hidden ${menuToggle ? 'expanded h-screen w-full' : ''}`}>
                     {/* <h3 className={`font-semibold text-2xl self-start tracking-[.3rem] ${menuToggle ? 'hidden' : ''}`}>SUBJECTS</h3> */}
                     <Image src={Images.subjects} alt='subjects' width={40} className={`mt-5 ${menuToggle ? 'hidden' : ''}`} />
 
-                    <div className='flex flex-col justify-start pr-[1rem]'>
+                    <div className='flex flex-col justify-start'>
                         {/* harmbuger menu */}
-                        <div className={`flex flex-col gap-[0.4rem] cursor-pointer fixed ${menuToggle ? 'top-[12%] left-[90%]' : ''}`} onClick={() => setMenuToggle(prev => !prev)}>
+                        <div className={`flex flex-col gap-[0.4rem] cursor-pointer ${menuToggle ? 'fixed top-[18%] left-[90%]' : ''}`} onClick={() => setMenuToggle(prev => !prev)}>
                             <div className={`w-[2.2rem] h-1 bg-white rounded-full ${menuToggle ? 'rotate-45 origin-left' : ''} ease-out duration-150`}></div>
                             <div className={`w-[2.2rem] h-1 bg-white rounded-full ${menuToggle ? 'opacity-0' : ''} ease-out duration-150`}></div>
                             <div className={`w-[2.2rem] h-1 bg-white rounded-full -rotate ${menuToggle ? '-rotate-45 origin-left' : ''} ease-out duration-150`} ></div>
@@ -61,7 +60,7 @@ const DesktopNavbar = () => {
                     </div>
 
                     {/* links */}
-                    <div className={`w-full h-full flex flex-col place-items-center justify-end pt-[5rem] ${!menuToggle ? 'hidden' : ''}`}>
+                    <div className={`w-full h-full flex flex-col place-items-center justify-end pt-[15rem] ${!menuToggle ? 'hidden' : ''}`}>
                         <div className='flex flex-col place-items-center justify-end gap-[1.5rem] h-full'>
                             <div className='flex flex-col w-full justify-center place-items-center gap-[2rem] text-3xl font-bold'>
                                 {Info.links.map((link, i) => (
@@ -87,4 +86,4 @@ const DesktopNavbar = () => {
     )
 }
 
-export default DesktopNavbar
+export default Navbar
