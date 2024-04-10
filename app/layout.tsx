@@ -34,7 +34,7 @@ export default function RootLayout({
           </Link>
           <Navbar />
         </div>
-        <div className="mt-[10rem]">
+        <div className="sm:mt-[10rem] mt-[25rem]">
           {children}
         </div>
         </body>
