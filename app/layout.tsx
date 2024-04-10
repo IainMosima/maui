@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar/Navbar";
+import { Images } from "@/constants";
+import Link from "next/link";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +26,18 @@ export default function RootLayout({
         type="image/<generated>"
         sizes="<generated>"
       />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* navbar section */}
+        <div className="flex justify-between place-items-start sm:h-auto h-[25rem] gap-3 sm:bg-black top-0 fixed w-full sm:z-20">
+          <Link href='/' className="pl-[1.5rem] pt-3 sm:pl-[4rem] sm:pt-[4rem]">
+            <Image src={Images.logo} alt="logo" priority={true} width={200} />
+          </Link>
+          <Navbar />
+        </div>
+        <div className="mt-[10rem]">
+          {children}
+        </div>
+        </body>
     </html>
   );
 }

@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         background: '#1E1E1E',
         background2: '#F7F7C5',
+        background3: '#E1E1B4',
         purple: '#7B2D3A',
         grey: "#808080"
       }

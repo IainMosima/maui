@@ -17,8 +17,12 @@ const links = [
         subject: 'ENGINEERING',
         link: '#'
     }
-]
+];
+
+const virtualLabs = ['24/7', 'cost effective', 'safe', 'interactive', 'personalized'];
+
 
 export default {
     links, 
+    virtualLabs,
 }

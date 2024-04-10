@@ -5,12 +5,11 @@ import { Images, Info } from '@/constants';
 import Link from 'next/link';
 import Image from 'next/image';
 
-
 const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false);
     return (
-        <div className='sm:pr-[4rem] sm:pt-[4rem] h-full'>
-            <div className={`bg-background lg:flex hidden px-[2rem] py-[1rem] gap-6 h-[6rem] z-10 duration-300 ease-out ${menuToggle ? 'expanded h-full w-full' : ''}`}>
+        <div className='sm:pr-[4rem] sm:pt-[4rem] h-full text-white'>
+            <div className={`bg-background lg:flex hidden px-[2rem] py-[1rem] gap-6 h-[6rem] z-10  ${menuToggle ? 'expanded h-full w-full' : ''}`}>
                 <h3 className={`font-semibold text-2xl self-start tracking-[.3rem] ${menuToggle ? 'hidden' : ''}`}>SUBJECTS</h3>
 
                 <div className='flex flex-col justify-end pr-5'>
