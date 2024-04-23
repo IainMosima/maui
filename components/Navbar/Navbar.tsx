@@ -8,9 +8,9 @@ import Image from 'next/image';
 const Navbar = () => {
     const [menuToggle, setMenuToggle] = useState(false);
     return (
-        <div className='sm:pr-[4rem] sm:pt-[4rem] h-full text-white'>
+        <div className='sm:pr-[4rem] sm:py-[2rem] h-full text-white'>
             <div className={`bg-background lg:flex hidden px-[2rem] py-[1rem] gap-6 h-[6rem] z-10  ${menuToggle ? 'expanded h-full w-full' : ''}`}>
-                <h3 className={`font-semibold text-2xl self-start tracking-[.3rem] ${menuToggle ? 'hidden' : ''}`}>SUBJECTS</h3>
+                <h3 className={`font-semibold text-2xl self-start tracking-[.3rem] ${menuToggle ? 'hidden' : ''}`}>FIELDS</h3>
 
                 <div className='flex flex-col justify-end pr-5'>
                     {/* harmbuger menu */}
@@ -48,6 +48,7 @@ const Navbar = () => {
                 <div className={`bg-background flex px-3 py-[1rem] gap-3 h-[16rem] z-10 sm:hidden ${menuToggle ? 'expanded h-screen w-full' : ''}`}>
                     {/* <h3 className={`font-semibold text-2xl self-start tracking-[.3rem] ${menuToggle ? 'hidden' : ''}`}>SUBJECTS</h3> */}
                     <Image src={Images.subjects} alt='subjects' width={40} className={`mt-5 ${menuToggle ? 'hidden' : ''}`} />
+
 
                     <div className='flex flex-col justify-start'>
                         {/* harmbuger menu */}
