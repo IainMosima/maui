@@ -18,7 +18,7 @@ const Body = () => {
 
                     <div className='flex flex-col gap-[3rem] w-full'>
                         <h1 className='font-semibold sm:text-5xl text-lg sm:text-center text-left sm:group-hover:text-left'>Ditch the Manuals, Embrace The Future</h1>
-                        <h4 className='sm:text-2xl sm:text-center text-left sm:group-hover:text-left text-lg font-thin'>VR training that gets you industry- ready, fast!</h4>
+                        <h4 className='sm:text-2xl sm:text-center text-left sm:group-hover:text-left text-lg font-thin'>VR training that gets you industry-ready, fast!</h4>
                     </div>
 
                     <div className='sm:group-hover:hidden sm:flex hidden place-items-center w-full justify-end h-full'>
