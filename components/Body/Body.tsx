@@ -14,7 +14,7 @@ const Body = () => {
     return (
         <div className='w-full group h-full cursor-pointer sm:mt-[10rem] mt-[25rem]'>
             <div className='px-[1.8rem] py-[1.5rem] sm:px-[4rem] sm:pt-[4rem] flex sm:flex-row flex-col place-items-center justify-between w-full min-h-[80vh] h-full'>
-                <div className='self-start flex flex-col w-full gap-[46vh] h-full group-hover:w-[70%] justify-center group-hover:text-left py-[2rem] ease-linear duration-[300ms] pt-[3rem]'>
+                <div className='self-start flex flex-col w-full gap-[46vh] h-full sm:group-hover:w-[70%] justify-center sm:group-hover:text-left py-[2rem] ease-linear duration-[300ms] pt-[3rem]'>
 
                     <div className='flex flex-col gap-[3rem] w-full'>
                         <h1 className='font-semibold sm:text-5xl text-lg sm:text-center text-left sm:group-hover:text-left'>Ditch the Manuals, Embrace The Future</h1>
