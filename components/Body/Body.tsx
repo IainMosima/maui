@@ -6,15 +6,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-// import './styles.css';
-
 import { Autoplay } from 'swiper/modules';
 import { Info } from '@/constants';
 
 const Body = () => {
     const [investToggle, setInvestToggle] = useState(false);
     return (
-        <div className='w-full group h-full cursor-pointer'>
+        <div className='w-full group h-full cursor-pointer sm:mt-[10rem] mt-[25rem]'>
             <div className='px-[1.8rem] py-[1.5rem] sm:px-[4rem] sm:pt-[4rem] flex sm:flex-row flex-col place-items-center justify-between w-full min-h-[80vh] h-full'>
                 <div className='self-start flex flex-col w-full gap-[46vh] h-full group-hover:w-[70%] justify-center group-hover:text-left py-[2rem] ease-linear duration-[300ms] pt-[3rem]'>
 
@@ -31,9 +29,9 @@ const Body = () => {
                 </div>
 
                 <div className='w-full bg-background2 sm:pt-[3rem] pt-[1.5rem] sm:pb-[5rem] pb-[3.4rem] sm:px-[3.5rem] px-[2rem] sm:group-hover:flex sm:hidden flex place-items-start flex-col basis-[60%] gap-[1rem] h-full rounded-sm'>
-                    <h2 className='text-grey tracking-[.25rem] sm:leading-[3rem] leading-[1.9rem] sm:text-[2vw] text-2xl font-bold'>Outdated Training? Downtime Dilemma? Meet Maui.</h2>
+                    <h2 className='text-grey tracking-[.2rem] sm:leading-[2rem] leading-[1.9rem] sm:text-[1.8vw] text-2xl font-bold'>Outdated Training? Downtime Dilemma? Meet Maui.</h2>
 
-                    <div className='flex h-[5rem] w-full overflow-y-hidden place-items-center sm:gap-5 gap-3'>
+                    <div className='flex h-[5rem] w-full overflow-y-hidden place-items-center gap-3'>
                         <div className='w-auto'>
                             <h3 className='text-black sm:text-[2vw] text-[1.1rem] sm:tracking-[.2rem] font-bold'>VR is </h3>
                         </div>
@@ -75,7 +73,7 @@ const Body = () => {
                     <div className='w-full group h-full'>
                         <div className={`w-full flex cursor-pointer justify-center ${investToggle ? 'flex-col justify-center place-items-center' : 'sm:group-hover:flex-col sm:group-hover:justify-start'}  duration-150 ease-in-out`} >
                             <div className='w-full' onClick={() => setInvestToggle(prev => !prev)}>
-                                <h4 className={`text-purple tracking-[.2rem] sm:text-[1.7vw] text-md ${investToggle ? 'text-left' : 'sm:group-hover:text-left text-center'} font-semibold`}>Invest in the future</h4>
+                                <h4 className={`text-grey tracking-[.2rem] sm:text-[1.7vw] text-md ${investToggle ? 'text-left' : 'sm:group-hover:text-left text-center'} font-semibold`}>Invest in the future</h4>
                             </div>
 
                             <div className={`${investToggle ? 'flex flex-col sm:flex-row' : 'sm:group-hover:flex hidden'} sm:place-items-center  w-full sm:justify-between justify-center gap-5`}>

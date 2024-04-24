@@ -28,14 +28,8 @@ export default function RootLayout({
       />
       <body className={inter.className}>
         {/* navbar section */}
-        <div className="flex justify-between place-items-start sm:h-auto h-[25rem] gap-3 sm:bg-black top-0 fixed w-full z-[100]">
-          <Link href='/' className="pl-[1.5rem] pt-3 sm:pl-[4rem] sm:pt-[4rem] w-auto h-auto bg-black p-3">
-            <Image src={Images.logo} alt="logo" priority={true} width={200} />
-          </Link>
-
-          <Navbar />
-        </div>
-        <div className="sm:mt-[10rem] mt-[25rem]">
+        <Navbar/>
+        <div>
           {children}
         </div>
       </body>
