@@ -13,23 +13,19 @@ const Body = () => {
     const [investToggle, setInvestToggle] = useState(false);
     return (
         <div className='w-full group h-full cursor-pointer sm:mt-[10rem] mt-[25rem]'>
-            <div className='px-[1.8rem] py-[1.5rem] sm:px-[4rem] sm:pt-[4rem] flex sm:flex-row flex-col place-items-center justify-between w-full min-h-[80vh] h-full'>
+            <div className='px-[1.8rem] py-[1.5rem] sm:px-[4rem] sm:pt-[4rem] flex sm:flex-row flex-col place-items-center justify-between w-full sm:min-h-[80vh] min-h-full '>
                 <div className='self-start flex flex-col w-full gap-[46vh] h-full sm:group-hover:w-[70%] justify-center sm:group-hover:text-left py-[2rem] ease-linear duration-[300ms] pt-[3rem]'>
 
                     <div className='flex flex-col gap-[3rem] w-full'>
-                        <h1 className='font-semibold sm:text-5xl text-lg sm:text-center text-left sm:group-hover:text-left'>Ditch the Manuals, Embrace The Future</h1>
-                        <h4 className='sm:text-2xl sm:text-center text-left sm:group-hover:text-left text-lg font-thin'>VR training that gets you industry-ready, fast!</h4>
+                        <h1 className='font-semibold sm:text-5xl text-lg text-center sm:group-hover:text-left'>Ditch the Manuals, Embrace The Future</h1>
+                        <h4 className='sm:text-2xl text-center sm:group-hover:text-left text-lg font-thin'>VR training that gets you industry-ready, fast!</h4>
                     </div>
 
-                    <div className='sm:group-hover:hidden sm:flex hidden place-items-center w-full justify-end h-full'>
-                        <div className='w-[30%]'>
-                            <h3 className='font-semibold leading-[.2rem] sm:text-4xl text-3xl'>Outdated Training? Downtime Dilemma? Meet Maui.</h3>
-                        </div>
-                    </div>
+                  
                 </div>
 
                 <div className='w-full bg-background2 sm:pt-[3rem] pt-[1.5rem] sm:pb-[5rem] pb-[3.4rem] sm:px-[3.5rem] px-[2rem] sm:group-hover:flex sm:hidden flex place-items-start flex-col basis-[60%] gap-[1rem] h-full rounded-sm'>
-                    <h2 className='text-grey tracking-[.2rem] sm:leading-[2rem] leading-[1.9rem] sm:text-[1.8vw] text-2xl font-bold'>Outdated Training? Downtime Dilemma? Meet Maui.</h2>
+                    <h2 className='text-grey tracking-[.2rem] sm:leading-[2rem] leading-[1.9rem] sm:text-[1.8vw] text-lg font-bold'>Outdated Training? Downtime Dilemma? Meet Maui.</h2>
 
                     <div className='flex h-[5rem] w-full overflow-y-hidden place-items-center gap-3'>
                         <div className='w-auto'>

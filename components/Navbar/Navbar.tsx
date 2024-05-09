@@ -33,7 +33,7 @@ const Navbar = () => {
                     {/* links */}
                     <div className={`w-full h-full flex flex-col place-items-center justify-center ${!menuToggle ? 'hidden' : ''}`}>
                         <div className='flex flex-col place-items-center gap-[1.5rem] h-full justify-end'>
-                            <div className='flex w-full justify-center place-items-center gap-[5rem] text-3xl font-bold'>
+                            <div className='flex w-full justify-center place-items-center gap-[5rem] text-2xl font-bold'>
                                 {Info.links.map((link, i) => (
                                     <Link href={link.link} key={i} onClick={() => setMenuToggle(false)}>
                                         {link.subject}
@@ -41,7 +41,7 @@ const Navbar = () => {
                                 ))}
                             </div>
 
-                            <Link href='/about-us' className='text-purple tracking-[.3rem] text-xl font-bold' onClick={() => setMenuToggle(false)}>ABOUT US</Link>
+                            <Link href='/about-us' className='text-purple tracking-[.3rem] text-xl font-bold opacity-90' onClick={() => setMenuToggle(false)}>ABOUT US</Link>
                         </div>
 
                         <div className='h-full flex place-items-end w-full justify-center'>
@@ -79,7 +79,7 @@ const Navbar = () => {
                                     ))}
                                 </div>
 
-                                <Link href='/about-us' className='text-purple tracking-[.3rem] text-xl font-bold' onClick={() => setMenuToggle(false)}>ABOUT US</Link>
+                                <Link href='/about-us' className='text-purple tracking-[.3rem] text-xl font-bold opacity-90' onClick={() => setMenuToggle(false)}>ABOUT US</Link>
                             </div>
 
                             <div className='h-full flex place-items-end w-full justify-center'>
