@@ -13,8 +13,8 @@ const AboutUs = () => {
 
                 <div className='w-full grid sm:grid-cols-3 grid-cols-2 justify-center place-items-center sm:gap-0 gap-4'>
                     {Info.founders.map((founder, i) => (
-                        <div key={i} className={`flex flex-col place-items-center w-full ${i === 2 ? 'col-span-2 w-[50%]' : ''}`}>
-                            <Image src={founder.profile} alt={founder.name} className='rounded-full' width={270} />
+                        <div key={i} className={`flex flex-col place-items-center w-full ${i === 2 ? 'sm:col-span-1 col-span-2 sm:w-full w-[50%]' : ''}`}>
+                            <Image src={founder.profile} alt={founder.name} className='rounded-full aspect-square' width={270} />
 
                             <h3 className='text-grey'>{founder.name}</h3>
 
